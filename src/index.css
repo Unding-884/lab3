@@ -1,0 +1,99 @@
+* {
+  font-family: "Bookman Old Style", serif;
+}
+
+body {
+  background: #1e1e2f;
+}
+
+.app {
+  max-width: 600px;
+  margin: auto;
+  background: #f9f9fb;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.todo_f {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.add_b {
+  padding: 5px 10px;
+  color: white;
+  background-color: #4cbfa6;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add_b:hover {
+  background-color: #3aa08a;
+}
+
+.delete_b {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #e86a6a;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete_b:hover {
+  background-color: #d95555;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecebfd;
+  border-radius: 15px;
+  margin-top: 2px;
+  padding: 2px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.task_title {
+  background-color: #d5f2e3;
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 15px;
+  color: #2d2d3a;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.task_container {
+  margin-left: -40px;
+}
+
+.task_checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4cbfa6;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.task_checkbox:checked {
+  background-color: #4cbfa6;
+}
