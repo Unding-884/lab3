@@ -97,3 +97,7 @@ body {
 .task_checkbox:checked {
   background-color: #4cbfa6;
 }
+
+.item-text {
+  max-width: 480px;
+}

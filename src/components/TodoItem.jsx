@@ -11,7 +11,7 @@ export default function TodoItem({ id, text, onRemove }) {
                 checked={completed}
                 onChange={() => setCompleted(!completed)}
             />
-            <span style={{ textDecoration: completed ? "line-through" : "none" }}>
+            <span className="item-text" style={{ textDecoration: completed ? "line-through" : "none" }}>
                 {text}
             </span>
             <button className="delete_b" onClick={() => onRemove(id)}>Delete</button>
