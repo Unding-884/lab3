@@ -31,6 +31,7 @@ flowchart TD
 
     AF -->|callback: onAdd text| TL
     TI -->|callback: onRemove id| TL
+```
 
 ## Description
 - **App** is the composition root. It renders `TodoList` but does not store any todos.  
