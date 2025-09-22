@@ -31,3 +31,10 @@ flowchart TD
 
     AF -->|callback: onAdd text| TL
     TI -->|callback: onRemove id| TL
+
+### Description
+- **App** is the composition root. It renders `TodoList` but does not store any todos.  
+- **TodoList** owns the list of todos (`state: todos[]`). It passes props down to child components and receives callbacks from them.  
+- **AddTodoForm** receives a prop `onAdd`. When the user submits a new task, it calls back up to `TodoList` with the new text.  
+- **TodoItem** manages its own `completed` state, but also receives `id`, `text`, and `onRemove` from `TodoList`. When the delete button is pressed, it calls back up with its `id`.  
+- **Data flow is unidirectional:** props go down from parent → child, while events (callbacks) go up from child → parent.
