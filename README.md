@@ -29,5 +29,5 @@ flowchart TD
     TL -->|props: onAdd| AF[AddTodoForm]
     TL -->|props: id, text, onRemove| TI[TodoItem]
 
-    AF -->|callback: onAdd(text)| TL
-    TI -->|callback: onRemove(id)| TL
+    AF -->|callback: onAdd text| TL
+    TI -->|callback: onRemove id| TL
