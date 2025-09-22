@@ -18,13 +18,11 @@ App
 │ ├── AddTodoForm (props: onAdd)
 │ └── TodoItem (state: completed, props: id, text, onRemove)
 
-## 🔄 Data Flow Diagram
 
 ```mermaid
 flowchart TD
 
     subgraph App
-        direction TB
         TL[TodoList]
     end
 
@@ -33,6 +31,3 @@ flowchart TD
 
     AF -->|callback: onAdd(text)| TL
     TI -->|callback: onRemove(id)| TL
-
-    TI -- state: completed --> TI
-    TL -- state: todos[] --> TL
