@@ -13,7 +13,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## 📌 Component Tree + Data Flow diagram
 
-App
+App<br>
 ├── TodoList (state: todos[])<br>
 │ ├── AddTodoForm (props: onAdd)<br>
 │ └── TodoItem (state: completed, props: id, text, onRemove)
