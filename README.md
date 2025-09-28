@@ -12,22 +12,15 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 ## 📌 Component Tree + Data Flow diagram
-
-App<br>
-├── TodoList (state: todos[])<br>
-│ ├── AddTodoForm (props: onAdd)<br>
-│ └── TodoItem (state: completed, props: id, text, onRemove)
-
-
 ```mermaid
 flowchart TD
 
     subgraph App
-        TL[TodoList]
+        TL[TodoList<br>state:todos#91;&#93]
     end
 
     TL -->|props: onAdd| AF[AddTodoForm]
-    TL -->|props: id, text, onRemove| TI[TodoItem]
+    TL -->|props: id, text, onRemove| TI[TodoItem<br>state: completed]
 
     AF -->|callback: onAdd text| TL
     TI -->|callback: onRemove id| TL
